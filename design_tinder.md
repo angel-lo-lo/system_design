@@ -22,6 +22,7 @@
 *   **Storage**: Images are the biggest consumer. Metadata is small.
 
 ## 3. High-Level Architecture
+![Uploading Screenshot 2025-11-24 at 2.00.16 PM (2).png…]()
 
 
 ## 4. Detailed Design
