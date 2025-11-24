@@ -22,8 +22,7 @@
 *   **Storage**: Images are the biggest consumer. Metadata is small.
 
 ## 3. High-Level Architecture
-![Uploading Screenshot 2025-11-24 at 2.00.16 PM (2).png…]()
-
+<img width="1017" height="488" alt="Screenshot 2025-11-24 at 2 00 16 PM (2)" src="https://github.com/user-attachments/assets/73127f64-641b-4ef4-82f4-5991e75acc06" />
 
 ## 4. Detailed Design
 
