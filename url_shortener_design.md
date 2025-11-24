@@ -67,32 +67,9 @@ Since we need to store billions of records and the relationships are simple (no 
 | `expires_at` | DATETIME | Expiration timestamp |
 
 ## 5. High-Level Architecture
+<img width="944" height="404" alt="Screenshot 2025-11-24 at 10 07 33 AM" src="https://github.com/user-attachments/assets/bc401073-6c67-4123-9b5d-1a4e4e7e7066" />
 
-```mermaid
-graph TD
-    User[User/Client]
-    LB[Load Balancer]
-    WebServer[Web Servers]
-    Cache[Distributed Cache (Redis)]
-    DB[(Database)]
-    KGS[Key Generation Service]
 
-    User -->|1. Shorten/Redirect| LB
-    LB --> WebServer
-    WebServer -->|2. Check Cache| Cache
-    Cache -- Hit --> WebServer
-    Cache -- Miss --> WebServer
-    WebServer -->|3. Read/Write| DB
-    WebServer -->|4. Get Key| KGS
-    KGS -->|5. Assign Token| WebServer
-```
-
-### Components
-1.  **Load Balancer**: Distributes incoming traffic across web servers.
-2.  **Web Servers**: Stateless services that handle API requests.
-3.  **Key Generation Service (KGS)**: Pre-generates unique keys to ensure no collisions and faster writes.
-4.  **Database**: Stores the mapping of Short Key <-> Long URL.
-5.  **Cache**: Stores frequently accessed URLs (e.g., top 20% of URLs generate 80% of traffic) to reduce DB load.
 
 ## 6. Detailed Design & Tradeoffs
 
