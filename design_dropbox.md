@@ -31,6 +31,7 @@
 ## 3. High-Level Architecture
 
 The system is split into two main parts: **Block Storage** (for actual file data) and **Metadata Storage** (for file info).
+<img width="1311" height="658" alt="Screenshot 2025-11-24 at 10 38 14 AM" src="https://github.com/user-attachments/assets/34c6e9ee-9c02-4b45-9696-4095d22f4d76" />
 
 
 ## 4. Detailed Design
