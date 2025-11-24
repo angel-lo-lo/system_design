@@ -22,6 +22,7 @@
 *   **Storage**: Posts are large (media), but metadata is small.
 
 ## 3. High-Level Architecture
+<img width="1229" height="627" alt="Screenshot 2025-11-24 at 12 49 19 PM (2)" src="https://github.com/user-attachments/assets/408dd933-0e1e-4240-ae32-89ec97e9585c" />
 
 
 ## 4. Detailed Design
