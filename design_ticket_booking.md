@@ -25,7 +25,7 @@
 *   **Storage**: Events and venue data are small. The main volume is bookings and active sessions.
 
 ## 3. High-Level Architecture
-
+<img width="1417" height="764" alt="Screenshot 2025-11-24 at 11 24 34 AM" src="https://github.com/user-attachments/assets/3a94d571-e74e-4407-a66e-8d0793322e0d" />
 
 ## 4. Detailed Design
 
